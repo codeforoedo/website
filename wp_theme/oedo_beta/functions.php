@@ -4,6 +4,7 @@ add_action( 'init', 'create_post_type' );
 function create_post_type() {
 
 //カスタム投稿タイプ
+/*
 	$labels = array(
 		'name' => __( 'イベント告知' )
 //		'singular_name' => __( 'イベント告知' ),
@@ -16,7 +17,7 @@ function create_post_type() {
 		'has_archive' => true
 	);
 	register_post_type('event',$args);
-
+*/
 	$labels = array(
 		'name' => __( 'メンバー' )
 //		'singular_name' => __( 'イベント告知' ),
@@ -29,6 +30,19 @@ function create_post_type() {
 		'has_archive' => true
 	);
 	register_post_type('members',$args);
+
+	$labels = array(
+		'name' => __( 'アプリ' )
+//		'singular_name' => __( 'イベント告知' ),
+	);
+	$args = array(
+		'labels' => $labels,
+		'public' => true,
+//		'menu_position' => 0,
+		'supports' => array('title','editor'),
+		'has_archive' => true
+	);
+	register_post_type('app',$args);
 
 //カスタムタクソノミー
 /*

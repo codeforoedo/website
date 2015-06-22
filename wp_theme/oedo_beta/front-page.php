@@ -1,7 +1,7 @@
 <?php
 	$eventloop = new WP_Query(array(
 		'post_status' => 'publish',
-		'post_type' => 'event',
+		'category_name' => 'event',
 		'posts_per_page'=> 5
 	) );
 	$memloop = new WP_Query(array(
@@ -105,7 +105,7 @@ get_header(); ?>
 		<li><a href="<?php the_permalink(); ?>">
 			<dl>
 				<dt><?php the_time('Y年n月j日'); ?></dt>
-				<dd><?php the_field('event_title'); ?></dd>
+				<dd><?php the_title(); ?></dd>
 			</dl>
 		</a></li>
 	<?php endwhile;endif; ?>

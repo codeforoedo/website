@@ -2,11 +2,11 @@
 <?php the_post(); ?>
 <ol id="bred">
 	<li id="home"><a href="/">Home</a></li>
-	<li><?php the_field('event_title'); ?></li>
+	<li><?php the_title(); ?></li>
 </ol>
 
 <div class="headings-area">
-	<h1 id="sec01-headings" class="headings"><?php the_field('event_title'); ?></h1>
+	<h1 id="sec01-headings" class="headings"><?php the_title(); ?></h1>
 	<p class="lead"><?php the_time('Y年n月j日'); ?> Posted</p>
 </div>
 <div id="single-main">
