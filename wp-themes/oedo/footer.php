@@ -11,6 +11,7 @@
 <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/min/jquery.gmap3.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/common.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/common.js"></script>
+<?php wp_foot(); ?>
 </body>
 </html>
