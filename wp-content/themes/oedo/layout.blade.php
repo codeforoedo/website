@@ -7,6 +7,7 @@
 	<meta name="description" content="CODE for 大江戸の公式Webサイトです。">
 	<meta name="keyword" content="Code for Japan, Code for Oedo, Oedo, 大江戸">
 {{-- ページ共通のスタイルシートを指定します。 --}}
+    <link rel="stylesheet" href="/assets/honoka/css/bootstrap.min.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{!! bloginfo('template_directory') !!}/theme.css">
 @section('styles')
@@ -46,7 +47,8 @@
 @action('wp_footer')
 
 {{-- ページ共通のスクリプトを指定します。 --}}
-<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script href="/assets/honoka/js/bootstrap.min.js"></script>
 <script src="{!! bloginfo('template_directory') !!}/js/common.js"></script>
 @section('scripts')
 {{-- ページ固有のスクリプト指定のプレースホルダです。 --}}
