@@ -17,14 +17,21 @@
 @section('content')
 
 <?php the_post(); ?>
-<ol id="bred">
-	<li id="home"><a href="/">Home</a></li>
-	<li>{{ the_title() }}</li>
-</ol>
+
+<ul class="breadcrumb">
+	<li><a href="/">Home</a></li>
+	<li class="active">{{ the_title() }}</li>
+</ul>
 
 <div class="headings-area">
-	<h1 id="sec01-headings" class="headings">{{ the_title() }}</h1>
+	<h1 class="headings">{{ the_title() }}</h1>
 	<p class="lead">{{ the_time('Y年n月j日') }} Posted</p>
+	{{-- Previous/next page navigation. --}}
+	{{ get_the_posts_pagination([
+		'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+		'next_text'          => __( 'Next page', 'twentyfifteen' ),
+		'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+	]) }}
 </div>
 <div id="single-main">
 	<div id="single-post">
