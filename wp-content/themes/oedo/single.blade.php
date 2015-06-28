@@ -26,18 +26,16 @@
 <div class="headings-area">
 	<h1 class="headings">{{ the_title() }}</h1>
 	<p class="lead">{{ the_time('Y年n月j日') }} Posted</p>
-	{{-- Previous/next page navigation. --}}
-	{{ get_the_posts_pagination([
-		'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-		'next_text'          => __( 'Next page', 'twentyfifteen' ),
-		'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-	]) }}
 </div>
-<div id="single-main">
-	<div id="single-post">
+<article class="single">
+	<div class="single-content">
 		{{ the_content() }}
-		<p id="go-top"><a href="/">トップページに戻る &gt;</a></p>
-	</div><!--/single-post-->
-</div><!--main-->
+	</div>
+	<div class="single-post-links text-center">
+		{!! previous_post_link() !!}
+		|
+		{!! next_post_link() !!}
+	</div>
+</article>
 
 @endsection
