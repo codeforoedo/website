@@ -1,6 +1,17 @@
 <?php
 
+require_once __DIR__ . '/classes/wp_bootstrap_navwalker.php';
+
+
+
 add_action('init', function () {
+	register_nav_menus([
+		'global-menu' => 'グローバルメニュー',
+//		'primary-left'     => __('Primary Menu Left', 'L'),
+//		'primary-right'    => __('Primary Menu Right', 'L'),
+//		'sidebar'          => __('Sidebar Menu', 'L'),
+	]);
+
 	// カスタム投稿タイプ「メンバー」を登録する
 	register_post_type('members', [
 		'labels' => [
