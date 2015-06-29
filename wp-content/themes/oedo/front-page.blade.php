@@ -80,24 +80,6 @@
 
 {{--
 
-	お問い合わせフォーム
-
---}}
-<section id="contact">
-	<div class="headings-area">
-		<h2 class="headings">- Contact -</h2>
-		<p class="lead">お問い合わせ</p>
-	</div>
-{{--@include('theme::front-page-contact')--}}
-	<div class="section">
-@shortcode([contact-form-7 id="40" title="Code for 大江戸参加登録フォーム"])
-	</div>
-</section>
-
-
-
-{{--
-
 	CODE for 大江戸とは
 
 --}}
@@ -158,5 +140,16 @@
 <div id="pagetop-btn">
 	<p><a href="#pagetop">^</a></p>
 </div>
+
+
+
+{{--
+
+	ダイアログ
+
+--}}
+@include('theme::front-page-contact')
+
+
 
 @endsection
