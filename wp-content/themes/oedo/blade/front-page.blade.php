@@ -1,33 +1,31 @@
 {{-- レイアウトを指定します。 --}}
 @extends('theme::layout')
 
+@section('styles')
 {{--
 
 	スタイルシートを指定するブロックです。
 
 --}}
-@section('styles')
-@parent
 {{-- <link rel="stylesheet" href=""> --}}
-@endsection
+@append
 
+@section('scripts')
 {{--
 
 	スクリプトを指定するブロックです。
 
 --}}
-@section('scripts')
-@parent
 <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
 <script src="{!! bloginfo('template_directory') !!}/js/min/jquery.gmap3.min.js"></script>
-@endsection
+@append
 
+@section('content')
 {{--
 
 	コンテンツを指定するブロックです。
 
 --}}
-@section('content')
 
 {{--
 
@@ -63,6 +61,7 @@
 </section>
 
 
+
 {{--
 
 	アプリケーション
@@ -71,7 +70,7 @@
 <section id="applications">
 	<div class="headings-area">
 		<h2 class="headings">- Applications -</h2>
-		<p class="lead">アプリ</p>
+		<p class="lead">アプリケーション</p>
 	</div>
 @include('theme::front-page-applications')
 </section>

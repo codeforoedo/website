@@ -1,20 +1,18 @@
 {{-- レイアウトを指定します。 --}}
 @extends('theme::layout')
 
-{{-- スタイルシートを指定するブロックです。 --}}
 @section('styles')
-@parent
+{{-- スタイルシートを指定するブロックです。 --}}
 {{-- <link rel="stylesheet" href=""> --}}
-@endsection
+@append
 
-{{-- スクリプトを指定するブロックです。 --}}
 @section('scripts')
-@parent
+{{-- スクリプトを指定するブロックです。 --}}
 {{-- <script type="javascript" src=""></script> --}}
-@endsection
+@append
 
-{{-- コンテンツを指定するブロックです。 --}}
 @section('content')
+{{-- コンテンツを指定するブロックです。 --}}
 
 <div class="container">
 
@@ -55,6 +53,8 @@
 
 	<hr/>
 </div>{{-- .row --}}
+@postempty
+記事がありません。
 @endpostloop
 
 <div class="pagination row">

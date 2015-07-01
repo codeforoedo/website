@@ -1,4 +1,3 @@
-
 <div id="contact" class="modal fade" role="dialog" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
