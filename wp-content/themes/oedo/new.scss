@@ -1,0 +1,128 @@
+@charset "utf-8";
+$baseColor00: #622954;
+$baseColor01: #745399;
+$contentWidth: 1080px;
+body {
+	font-size: 14px;
+	line-height: 1.75;
+	color: #333;
+}
+a {
+	text-decoration: none;
+	color: $baseColor01;
+	transition: all 0.3s linear;
+}
+/*headings*/
+.headings-area {
+	width: 100%;
+	text-align: center;
+	letter-spacing: 0.1em;
+	border-bottom: 2px solid $baseColor00;
+  margin-bottom: 60px;
+	.headings {
+		font-size: 30px;
+		font-family: serif;
+		color: $baseColor00;
+	}
+	.lead {
+		font-size: 14px;
+		margin-bottom: 20px;
+		color: #666;
+		br { display: none; }
+	}
+}
+
+#recents {
+  .top-event-sec {
+  	ul {
+  		margin-bottom: 40px;
+      list-style: none;
+  		li {
+  			border-bottom: 1px dotted #ccc;
+  			font-size: 18px;
+  			line-height: 4em;
+        height: 4em;
+        a {
+    			display: block;
+    			color: #333;
+    			&:hover {
+    				background-color: #f6f6f6;
+            text-decoration: none;
+    			}
+          dl {
+    				dt {
+    					display: inline-block;
+    					margin-right: 1em;
+    					color: $baseColor01;
+    					font-weight: bold;
+    				}
+    				dd { display: inline-block; }
+    			}
+    		}
+  		}
+  	}
+  }
+}
+
+/*toppage section member*/
+#member {
+  text-align: center;
+  li { margin: 0;list-style: none; }
+  img { width: 140px;height: 140px; }
+  .profile {
+    text-align: center;
+    .ja {
+      font-family: serif;
+      margin-bottom: 0.75em;
+      span {
+        display: block;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  #member {
+    li { padding: 0 0 30px; }
+    img { width: 160px;height: 160px; }
+    .profile { padding: 20px 0 20px; }
+  }
+}
+@media (min-width: 992px) {
+  #member {
+    li { padding: 0 80px 60px; }
+    img { width: 160px;height: 160px; }
+    .profile { padding: 20px 0 0; }
+  }
+}
+@media (min-width: 1200px) {
+}
+
+/*gmap area*/
+.gmap-area {
+	position: relative;
+	height: 600px;
+	width: 100%;
+	background-color: #ccc;
+}
+#mapbox {
+	width: 260px;
+	height: auto;
+	h4 {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	a {
+		color: #333;
+		text-decoration: underline;
+	}
+	table {
+		width: 100%;
+		th,td { font-size: 11px; }
+		th {
+			vertical-align: top;
+			width: 30%;
+			font-weight: bold;
+		}
+		td {}
+	}
+}

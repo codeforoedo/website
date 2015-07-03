@@ -28,7 +28,10 @@ $(function() {
 //	setInterval(function(){
 //		$('#key img:first').animate({opacity:'0'}, 1000).next('img').animate({opacity:'1'}, 1000).end().appendTo($key);
 //	}, 5000);
-
+	$('.carousel').carousel({
+		interval: 6000,
+		pause: hover
+	});
 	$('.gmap-area').gmap3({
 		latitude: 35.6241,
 		longitude: 139.7227,
@@ -48,6 +51,7 @@ $(function() {
 			}
 		]
 	});
+/*
 	$('a[href^=#]').on('click', function(){
 		var speed = 500;
 		var href= $(this).attr("href");
@@ -56,4 +60,5 @@ $(function() {
 		$("html, body").animate({scrollTop:position}, speed, "swing");
 		return false;
 	});
+*/
 });

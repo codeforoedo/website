@@ -1,0 +1,140 @@
+body {
+  font-size: 14px;
+  line-height: 1.75;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #745399;
+  transition: all 0.3s linear;
+}
+
+/*headings*/
+.headings-area {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-bottom: 2px solid #622954;
+  margin-bottom: 60px;
+}
+.headings-area .headings {
+  font-size: 30px;
+  font-family: serif;
+  color: #622954;
+}
+.headings-area .lead {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+.headings-area .lead br {
+  display: none;
+}
+
+#recents .top-event-sec ul {
+  margin-bottom: 40px;
+  list-style: none;
+}
+#recents .top-event-sec ul li {
+  border-bottom: 1px dotted #ccc;
+  font-size: 18px;
+  line-height: 4em;
+  height: 4em;
+}
+#recents .top-event-sec ul li a {
+  display: block;
+  color: #333;
+}
+#recents .top-event-sec ul li a:hover {
+  background-color: #f6f6f6;
+  text-decoration: none;
+}
+#recents .top-event-sec ul li a dl dt {
+  display: inline-block;
+  margin-right: 1em;
+  color: #745399;
+  font-weight: bold;
+}
+#recents .top-event-sec ul li a dl dd {
+  display: inline-block;
+}
+
+/*toppage section member*/
+#member {
+  text-align: center;
+}
+#member li {
+  margin: 0;
+  list-style: none;
+}
+#member img {
+  width: 140px;
+  height: 140px;
+}
+#member .profile {
+  text-align: center;
+}
+#member .profile .ja {
+  font-family: serif;
+  margin-bottom: 0.75em;
+}
+#member .profile .ja span {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  #member li {
+    padding: 0 0 30px;
+  }
+  #member img {
+    width: 160px;
+    height: 160px;
+  }
+  #member .profile {
+    padding: 20px 0 20px;
+  }
+}
+@media (min-width: 992px) {
+  #member li {
+    padding: 0 80px 60px;
+  }
+  #member img {
+    width: 160px;
+    height: 160px;
+  }
+  #member .profile {
+    padding: 20px 0 0;
+  }
+}
+/*gmap area*/
+.gmap-area {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+#mapbox {
+  width: 260px;
+  height: auto;
+}
+#mapbox h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#mapbox a {
+  color: #333;
+  text-decoration: underline;
+}
+#mapbox table {
+  width: 100%;
+}
+#mapbox table th, #mapbox table td {
+  font-size: 11px;
+}
+#mapbox table th {
+  vertical-align: top;
+  width: 30%;
+  font-weight: bold;
+}
