@@ -11,6 +11,15 @@ a {
   transition: all 0.3s linear;
 }
 
+.sp-none {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sp-none {
+    display: block;
+  }
+}
 /*navbar*/
 .navbar {
   margin-bottom: 0;
@@ -233,7 +242,39 @@ a {
 #applications .headings-area {
   margin-bottom: 0;
 }
+#applications .btn {
+  font-size: 12px;
+}
 
+#appCarousel .carousel-caption {
+  bottom: 0;
+}
+#appCarousel .carousel-indicators {
+  bottom: 0;
+}
+#appCarousel ol {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  #applications .btn {
+    font-size: 16px;
+  }
+  #applications .item img {
+    width: 100%;
+    height: auto;
+  }
+
+  #appCarousel .carousel-caption {
+    bottom: 20px;
+  }
+  #appCarousel .carousel-indicators {
+    bottom: 10px;
+  }
+  #appCarousel ol {
+    margin-bottom: 11px;
+  }
+}
 /*toppage section member*/
 #member.row {
   margin: 0 auto;
@@ -311,6 +352,14 @@ a {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  #aboutus-bg {
+    font-size: 14px;
+  }
+  #aboutus-bg .aboutus-subtitle {
+    font-size: 21px;
+  }
+}
 /*toppage section place*/
 #place {
   font-size: 12px;
