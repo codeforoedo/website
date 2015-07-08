@@ -53,6 +53,7 @@ a {
 		height: 30px;
 		line-height: 30px;
 		text-indent: 10px;
+		font-size: 12px;
 	}
 }
 @media (min-width: 768px) {
@@ -68,7 +69,7 @@ a {
 /*keyarea*/
 #key-area {
 	width: 100%;
-	min-height: 180px;
+	min-height: 150px;
 	position: relative;
 	overflow: hidden;
 	margin-bottom: 60px;
@@ -142,7 +143,6 @@ a {
 			border: 1px solid #ffffff;
 			padding: 5px;
 			border-radius: 5px;
-			background-color: $baseColor00;
 			opacity: 0.9;
 		}
 	}
@@ -243,10 +243,12 @@ a {
 }
 
 /*toppage section member*/
+#member.row { margin: 0 auto; }
 #member {
+	padding: 0;
   text-align: center;
-  li { margin: 0;list-style: none; }
-  img { width: 140px;height: 140px; }
+  li { list-style: none; }
+  img { width: 100px;height: 100px; }
   .profile {
     text-align: center;
     .ja {
@@ -258,6 +260,7 @@ a {
     }
   }
 }
+
 @media (min-width: 768px) {
   #member {
     li { padding: 0 0 30px; }
@@ -267,12 +270,39 @@ a {
 }
 @media (min-width: 992px) {
   #member {
-    li { padding: 0 80px 60px; }
+//    li { padding: 0 80px 60px; }
     img { width: 160px;height: 160px; }
-    .profile { padding: 20px 0 0; }
+//    .profile { padding: 20px 0 0; }
   }
 }
-@media (min-width: 1200px) {
+
+/*toppage section aboutus*/
+#aboutus {
+	.headings-area { margin-bottom: 0;}
+}
+#aboutus-bg {
+	background-image: url(images/aboutus_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	padding: 30px 0;
+	color: #ffffff;
+	.aboutus-subtitle { font-size: 16px;padding: 0 0 10px 0;margin-left: 0;border-bottom: 1px dotted #fff; }
+	.text { padding: 0 15px; }
+	ul { padding: 0 15px; }
+	ul, li { list-style-position: inside;}
+	li { padding: 0; }
+}
+
+/*toppage section place*/
+#place {
+	.headings-area { margin-bottom: 0;}
+	font-size: 12px;
+	#cat-box {
+		background-color: #000000;
+		padding: 10px 0;
+		color: #ffffff;
+	}
 }
 
 /*gmap area*/
@@ -283,7 +313,7 @@ a {
 	background-color: #ccc;
 }
 #mapbox {
-	width: 260px;
+	width: 220px;
 	height: auto;
 	h4 {
 		font-size: 14px;
@@ -302,6 +332,12 @@ a {
 			font-weight: bold;
 		}
 		td {}
+	}
+}
+@media (min-width: 768px) {
+	#mapbox {
+		width: 300px;
+		height: auto;
 	}
 }
 

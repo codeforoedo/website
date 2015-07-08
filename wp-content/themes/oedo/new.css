@@ -1,3 +1,4 @@
+/*last up date 2015.07.06*/
 body {
   font-size: 14px;
   line-height: 1.75;
@@ -10,7 +11,7 @@ a {
   transition: all 0.3s linear;
 }
 
-/*header*/
+/*navbar*/
 .navbar {
   margin-bottom: 0;
 }
@@ -53,6 +54,7 @@ a {
   height: 30px;
   line-height: 30px;
   text-indent: 10px;
+  font-size: 12px;
 }
 
 @media (min-width: 768px) {
@@ -65,7 +67,7 @@ a {
 /*keyarea*/
 #key-area {
   width: 100%;
-  min-height: 180px;
+  min-height: 150px;
   position: relative;
   overflow: hidden;
   margin-bottom: 60px;
@@ -149,7 +151,6 @@ a {
     border: 1px solid #ffffff;
     padding: 5px;
     border-radius: 5px;
-    background-color: #622954;
     opacity: 0.9;
   }
 }
@@ -234,16 +235,20 @@ a {
 }
 
 /*toppage section member*/
+#member.row {
+  margin: 0 auto;
+}
+
 #member {
+  padding: 0;
   text-align: center;
 }
 #member li {
-  margin: 0;
   list-style: none;
 }
 #member img {
-  width: 140px;
-  height: 140px;
+  width: 100px;
+  height: 100px;
 }
 #member .profile {
   text-align: center;
@@ -269,17 +274,56 @@ a {
   }
 }
 @media (min-width: 992px) {
-  #member li {
-    padding: 0 80px 60px;
-  }
   #member img {
     width: 160px;
     height: 160px;
   }
-  #member .profile {
-    padding: 20px 0 0;
-  }
 }
+/*toppage section aboutus*/
+#aboutus .headings-area {
+  margin-bottom: 0;
+}
+
+#aboutus-bg {
+  background-image: url(images/aboutus_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+  padding: 30px 0;
+  color: #ffffff;
+}
+#aboutus-bg .aboutus-subtitle {
+  font-size: 16px;
+  padding: 0 0 10px 0;
+  margin-left: 0;
+  border-bottom: 1px dotted #fff;
+}
+#aboutus-bg .text {
+  padding: 0 15px;
+}
+#aboutus-bg ul {
+  padding: 0 15px;
+}
+#aboutus-bg ul, #aboutus-bg li {
+  list-style-position: inside;
+}
+#aboutus-bg li {
+  padding: 0;
+}
+
+/*toppage section place*/
+#place {
+  font-size: 12px;
+}
+#place .headings-area {
+  margin-bottom: 0;
+}
+#place #cat-box {
+  background-color: #000000;
+  padding: 10px 0;
+  color: #ffffff;
+}
+
 /*gmap area*/
 .gmap-area {
   position: relative;
@@ -289,7 +333,7 @@ a {
 }
 
 #mapbox {
-  width: 260px;
+  width: 220px;
   height: auto;
 }
 #mapbox h4 {
@@ -312,6 +356,12 @@ a {
   font-weight: bold;
 }
 
+@media (min-width: 768px) {
+  #mapbox {
+    width: 300px;
+    height: auto;
+  }
+}
 #pagetop-btn {
   position: fixed;
   bottom: 40px;
