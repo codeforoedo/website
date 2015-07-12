@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   /*	font-size: 14px;*/
   line-height: 1.75;
@@ -154,29 +155,29 @@ a {
   }
 }
 /*section header*/
-.theme-section header {
+.theme-section .header {
   width: 100%;
   text-align: center;
   letter-spacing: 0.1em;
   margin-bottom: 30px;
 }
-.theme-section header h2 {
+.theme-section .header h2 {
   font-size: 21px;
   font-family: serif;
   color: #622954;
 }
-.theme-section header .lead {
+.theme-section .header .lead {
   font-size: 14px;
   color: #666;
 }
 @media (min-width: 768px) {
-  .theme-section header h2 {
+  .theme-section .header h2 {
     font-size: 30px;
   }
-  .theme-section header .lead {
+  .theme-section .header .lead {
     font-size: 21px;
   }
-  .theme-section header .lead br {
+  .theme-section .header .lead br {
     display: none;
   }
 }
@@ -233,66 +234,32 @@ a {
   }
 }
 /*toppage section app*/
-#applications .headings-area {
-  margin-bottom: 0;
+#applications {
+  /*
+  	.btn { font-size: 12px; }
+  	@media (min-width: 768px) {
+  		.btn { font-size: 16px; }
+  		.item img { width: 100%;height: auto; }
+  	}
+  
+  	.carousel {
+  		.carousel-caption { bottom: 0; }
+  		.carousel-indicators { bottom: 0; }
+  		ol { margin-bottom: 0; }
+  		@media (min-width: 768px) {
+  			.carousel-caption { bottom: 20px; }
+  			.carousel-indicators { bottom: 10px; }
+  			ol { margin-bottom: 11px; }
+  		}
+  	}
+  */
 }
-#applications .btn {
-  font-size: 12px;
-}
-@media (min-width: 768px) {
-  #applications .btn {
-    font-size: 16px;
-  }
-  #applications .item img {
-    width: 100%;
-    height: auto;
-  }
-}
-#applications .carousel .carousel-caption {
-  bottom: 0;
-}
-#applications .carousel .carousel-indicators {
-  bottom: 0;
-}
-#applications .carousel ol {
-  margin-bottom: 0;
-}
-@media (min-width: 768px) {
-  #applications .carousel .carousel-caption {
-    bottom: 20px;
-  }
-  #applications .carousel .carousel-indicators {
-    bottom: 10px;
-  }
-  #applications .carousel ol {
-    margin-bottom: 11px;
-  }
-}
-
-/*toppage section member*/
-#members {
-  padding: 0;
+#applications .body ul {
+  margin-top: 2em;
   text-align: center;
 }
-#members .row {
-  margin: 0 auto;
-}
-#members li {
+#applications .body li {
   list-style: none;
-}
-#members img {
-  width: 100px;
-  height: 100px;
-}
-#members .profile {
-  text-align: center;
-}
-#members .profile .ja {
-  font-family: serif;
-  margin-bottom: 0.75em;
-}
-#members .profile .ja span {
-  display: block;
 }
 
 /*toppage section aboutus*/
@@ -331,6 +298,28 @@ a {
   }
 }
 
+/*toppage section member*/
+#members .body ul {
+  margin-top: 2em;
+  text-align: center;
+}
+#members .body li {
+  list-style: none;
+}
+#members .body img {
+  width: 100px;
+  height: 100px;
+}
+#members .body .profile {
+  text-align: center;
+}
+#members .body .profile .ja {
+  font-family: serif;
+  margin-bottom: 0.75em;
+}
+#members .body .profile .ja span {
+  display: block;
+}
 @media (min-width: 768px) {
   #members .body li {
     padding: 0 0 30px;
@@ -349,10 +338,11 @@ a {
     height: 160px;
   }
 }
-#members .vaycat {
+#members .body .vaycat {
   background-color: #000000;
   padding: 10px 0;
   color: #ffffff;
+  text-align: center;
 }
 
 /*toppage section place*/
@@ -428,6 +418,13 @@ a {
     opacity: 0.75;
     background-size: 80px 80px;
   }
+}
+
+/**
+ *	Bootstrapクラスのスタイル補正
+ */
+.list-group-item .badge {
+  margin-top: 6px;
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -12,15 +12,15 @@
 	$image_url = wp_get_attachment_image_src(get_field('thumbnail'), 'member_thumbnail')[0];
 ?>
 		<li class="col-sm-4 col-xs-6">
-			<img class="img-circle" src="{!! $image_url !!}" alt="{{ the_field('name') }}">
+			<img class="img-circle" src="{!! $image_url !!}" alt="{{ get_field('name') }}">
 			<dl class="profile">
-				<dt class="ja">{{ the_field('name') }}<span>{{ the_field('pronunciation') }}</span></dt>
-				<dd>{{ the_field('post_edo') }}
-@if (the_field('post_present'))
-：{{ the_field('post_present') }}
+				<dt class="ja">{{ get_field('name') }}<span>{{ get_field('pronunciation') }}</span></dt>
+				<dd>{{ get_field('post_edo') }}
+@if (get_field('post_present'))
+／ {{ get_field('post_present') }}
 @endif
 				</dd>
-				<dd>{{ the_field('comment') }}</dd>
+				<dd>{{ get_field('comment') }}</dd>
 			</dl>
 		</li>
 @postempty

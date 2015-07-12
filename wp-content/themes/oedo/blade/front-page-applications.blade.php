@@ -6,10 +6,10 @@
 	'posts_per_page' => -1,
 ])
 		<li class="col-sm-12 col-xs-12">
-			<div><a href="{!! the_field('landingpage_url') !!}">
-				<img src="{!! the_field('icon') !!}" alt="{{ the_field('name') }}">
+			<div><a href="{!! get_field('application_url') !!}">
+				<img src="{!! get_field('icon') !!}" alt="{{ get_field('name') }}">
 				<br>
-				{{ the_field('name') }}
+				{{ get_field('name') }}
 			</a></div>
 		</li>
 @postempty

@@ -152,7 +152,7 @@ a {
 }
 
 /*section header*/
-.theme-section header {
+.theme-section .header {
 	width: 100%;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -244,7 +244,18 @@ a {
 
 /*toppage section app*/
 #applications {
-	.headings-area { margin-bottom: 0;}
+	.header {
+	}
+	.body {
+		ul {
+			margin-top: 2em;
+			text-align: center;
+		}
+		li {
+			list-style: none;
+		}
+	}
+/*
 	.btn { font-size: 12px; }
 	@media (min-width: 768px) {
 		.btn { font-size: 16px; }
@@ -261,37 +272,12 @@ a {
 			ol { margin-bottom: 11px; }
 		}
 	}
-}
-
-/*toppage section member*/
-#members {
-	padding: 0;
-	text-align: center;
-	.row {
-		margin: 0 auto;
-	}
-	li {
-		list-style: none;
-	}
-	img {
-		width: 100px;
-		height: 100px;
-	}
-	.profile {
-		text-align: center;
-		.ja {
-			font-family: serif;
-			margin-bottom: 0.75em;
-			span {
-				display: block;
-			}
-		}
-	}
+*/
 }
 
 /*toppage section aboutus*/
 #aboutus {
-	header {
+	.header {
 	}
 	.body {
 		background-image: url(images/aboutus.jpg);
@@ -313,8 +299,32 @@ a {
 	}
 }
 
+/*toppage section member*/
 #members {
+	.header {
+	}
 	.body {
+		ul {
+			margin-top: 2em;
+			text-align: center;
+		}
+		li {
+			list-style: none;
+		}
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		.profile {
+			text-align: center;
+			.ja {
+				font-family: serif;
+				margin-bottom: 0.75em;
+				span {
+					display: block;
+				}
+			}
+		}
 		@media (min-width: 768px) {
 			li { padding: 0 0 30px; }
 			img { width: 160px; height: 160px; }
@@ -325,18 +335,22 @@ a {
 			img { width: 160px; height: 160px; }
 //			.profile { padding: 20px 0 0; }
 		}
-	}
-
-	.vaycat {
-		background-color: #000000;
-		padding: 10px 0;
-		color: #ffffff;
+		.vaycat {
+			background-color: #000000;
+			padding: 10px 0;
+			color: #ffffff;
+			text-align: center;
+		}
 	}
 }
 
 /*toppage section place*/
 #place {
 	font-size: 12px;
+	.header {
+	}
+	.body {
+	}
 }
 
 /*gmap area*/
@@ -401,4 +415,13 @@ a {
 			background-size: 80px 80px;
 		}
 	}
+}
+
+
+
+/**
+ *	Bootstrapクラスのスタイル補正
+ */
+.list-group-item .badge {
+	margin-top: 6px;
 }

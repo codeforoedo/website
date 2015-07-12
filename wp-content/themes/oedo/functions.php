@@ -19,10 +19,10 @@ add_action('init', function () {
 		'has_archive' => true,
 	]);
 
-	// カスタム投稿タイプ「アプリ」を登録する
-	register_post_type('app', [
+	// カスタム投稿タイプ「アプリケーション」を登録する
+	register_post_type('applications', [
 		'labels' => [
-			'name' => 'アプリ',
+			'name' => 'アプリケーション',
 		],
 		'public' => true,
 //		'menu_position' => 0,
