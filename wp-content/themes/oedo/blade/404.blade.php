@@ -19,14 +19,13 @@
 	<li class="active">404</li>
 </ul>
 
-<div class="headings-area">
-	<h1 id="sec01-headings" class="headings">404 File Not Found</h1>
-</div>
+<header>
+	<h1>{{ trans('theme::messages.404.title') }}</h1>
+</header>
 <div id="single-main">
 	<div id="single-post">
-		<p>ページが見つかりません。</p>
-		<p id="go-top"><a href="/">トップページに戻る &gt;</a></p>
-	</div><!--/single-post-->
-</div><!--main-->
+		<p>{{ trans('theme::messages.404.message') }}</p>
+	</div>
+</div>
 
 @endsection

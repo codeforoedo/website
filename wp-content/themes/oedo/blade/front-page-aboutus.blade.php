@@ -1,5 +1,5 @@
-<div id="sec01-bg"><div class="container">
-	<h3 class="sec01-subtitle">東京を面白くしたい</h3>
+<div class="container">
+	<h3>東京を面白くしたい</h3>
 	<div class="row sec-group text">
 		<p>
 			東京は、「近隣住民への無関心」「孤独な老人」「空き家問題」といったコミュニケーション不足に起因した問題を抱えている世界有数の大都市です。
@@ -17,7 +17,7 @@
 		</p>
 	</div>
 
-	<h3 class="sec01-subtitle">ミッション</h3>
+	<h3>ミッション</h3>
 	<div class="row sec-group">
 		<ul>
 			<li>シビックテックの推進 - 市民による市民のための情報テクノロジー活用　<a href="http://code4japan.org"><i class="fa fa-external-link"></i> CODE for Japan</a></li>
@@ -28,7 +28,7 @@
 		</ul>
 	</div>
 
-	<h3 class="sec01-subtitle">主な活動内容</h3>
+	<h3>主な活動内容</h3>
 	<div class="row sec-group">
 		<ul>
 			<li>東京都（23区）のオープンデータの定義と活用</li>
@@ -36,4 +36,4 @@
 			<li>市民のインターネット技術活用ワークショップの実施</li>
 		</ul>
 	</div>
-</div></div>{{-- .container --}}
+</div>

@@ -23,10 +23,10 @@
 	<li class="active">{{ the_title() }}</li>
 </ul>
 
-<div class="headings-area">
-	<h1 class="headings">{{ the_title() }}</h1>
+<header>
+	<h1>{{ the_title() }}</h1>
 	<p class="lead">{{ the_time('Y年n月j日') }} Posted</p>
-</div>
+</header>
 <article class="single">
 	<div class="single-content">
 		{{ the_content() }}

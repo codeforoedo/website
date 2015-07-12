@@ -1,6 +1,5 @@
-/*last up date 2015.07.06*/
 body {
-  font-size: 14px;
+  /*	font-size: 14px;*/
   line-height: 1.75;
   color: #333;
 }
@@ -11,15 +10,18 @@ a {
   transition: all 0.3s linear;
 }
 
-.sp-none {
-  display: none;
+/*header*/
+#header .header-row {
+  background-color: #622954;
+}
+#header .header-text {
+  color: #ffffff;
+  height: 20px;
+  line-height: 20px;
+  text-indent: 10px;
+  margin: 0;
 }
 
-@media (min-width: 768px) {
-  .sp-none {
-    display: block;
-  }
-}
 /*navbar*/
 .navbar {
   margin-bottom: 0;
@@ -42,18 +44,6 @@ a {
     height: 40px;
   }
 }
-/*header*/
-#header-line {
-  background-color: #622954;
-}
-#header-line #header-text {
-  color: #ffffff;
-  height: 20px;
-  line-height: 20px;
-  text-indent: 10px;
-  margin: 0;
-}
-
 /*footer*/
 #footer {
   background-color: #622954;
@@ -163,35 +153,39 @@ a {
     opacity: 0.9;
   }
 }
-/*headings*/
-.headings-area {
+/*section header*/
+.theme-section header {
   width: 100%;
   text-align: center;
   letter-spacing: 0.1em;
-  border-bottom: 2px solid #622954;
   margin-bottom: 30px;
 }
-.headings-area .headings {
+.theme-section header h2 {
   font-size: 21px;
   font-family: serif;
   color: #622954;
 }
-.headings-area .lead {
+.theme-section header .lead {
   font-size: 14px;
   color: #666;
 }
-
 @media (min-width: 768px) {
-  .headings-area .headings {
+  .theme-section header h2 {
     font-size: 30px;
   }
-  .headings-area .lead {
+  .theme-section header .lead {
     font-size: 21px;
   }
-  .headings-area .lead br {
+  .theme-section header .lead br {
     display: none;
   }
 }
+
+/*section body*/
+.theme-section .body {
+  border-top: 2px solid #622954;
+}
+
 /*toppage section recents*/
 #recents .top-event-sec ul {
   margin-bottom: 40px;
@@ -245,17 +239,6 @@ a {
 #applications .btn {
   font-size: 12px;
 }
-
-#appCarousel .carousel-caption {
-  bottom: 0;
-}
-#appCarousel .carousel-indicators {
-  bottom: 0;
-}
-#appCarousel ol {
-  margin-bottom: 0;
-}
-
 @media (min-width: 768px) {
   #applications .btn {
     font-size: 16px;
@@ -264,113 +247,117 @@ a {
     width: 100%;
     height: auto;
   }
-
-  #appCarousel .carousel-caption {
+}
+#applications .carousel .carousel-caption {
+  bottom: 0;
+}
+#applications .carousel .carousel-indicators {
+  bottom: 0;
+}
+#applications .carousel ol {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  #applications .carousel .carousel-caption {
     bottom: 20px;
   }
-  #appCarousel .carousel-indicators {
+  #applications .carousel .carousel-indicators {
     bottom: 10px;
   }
-  #appCarousel ol {
+  #applications .carousel ol {
     margin-bottom: 11px;
   }
 }
-/*toppage section member*/
-#member.row {
-  margin: 0 auto;
-}
 
-#member {
+/*toppage section member*/
+#members {
   padding: 0;
   text-align: center;
 }
-#member li {
+#members .row {
+  margin: 0 auto;
+}
+#members li {
   list-style: none;
 }
-#member img {
+#members img {
   width: 100px;
   height: 100px;
 }
-#member .profile {
+#members .profile {
   text-align: center;
 }
-#member .profile .ja {
+#members .profile .ja {
   font-family: serif;
   margin-bottom: 0.75em;
 }
-#member .profile .ja span {
+#members .profile .ja span {
   display: block;
 }
 
-@media (min-width: 768px) {
-  #member li {
-    padding: 0 0 30px;
-  }
-  #member img {
-    width: 160px;
-    height: 160px;
-  }
-  #member .profile {
-    padding: 20px 0 20px;
-  }
-}
-@media (min-width: 992px) {
-  #member img {
-    width: 160px;
-    height: 160px;
-  }
-}
 /*toppage section aboutus*/
-#aboutus .headings-area {
-  margin-bottom: 0;
-}
-
-#aboutus-bg {
-  background-image: url(images/aboutus_bg.jpg);
+#aboutus .body {
+  background-image: url(images/aboutus.jpg);
   background-repeat: no-repeat;
   background-position: center 0;
   background-size: cover;
   padding: 30px 0;
   color: #ffffff;
 }
-#aboutus-bg .aboutus-subtitle {
+#aboutus .body h3 {
   font-size: 16px;
   padding: 0 0 10px 0;
   margin-left: 0;
   border-bottom: 1px dotted #fff;
 }
-#aboutus-bg .text {
+#aboutus .body .text {
   padding: 0 15px;
 }
-#aboutus-bg ul {
+#aboutus .body ul {
   padding: 0 15px;
 }
-#aboutus-bg ul, #aboutus-bg li {
+#aboutus .body ul, #aboutus .body li {
   list-style-position: inside;
 }
-#aboutus-bg li {
+#aboutus .body li {
   padding: 0;
 }
-
 @media (min-width: 768px) {
-  #aboutus-bg {
+  #aboutus .body {
     font-size: 14px;
   }
-  #aboutus-bg .aboutus-subtitle {
+  #aboutus .body h3 {
     font-size: 21px;
   }
 }
-/*toppage section place*/
-#place {
-  font-size: 12px;
+
+@media (min-width: 768px) {
+  #members .body li {
+    padding: 0 0 30px;
+  }
+  #members .body img {
+    width: 160px;
+    height: 160px;
+  }
+  #members .body .profile {
+    padding: 20px 0 20px;
+  }
 }
-#place .headings-area {
-  margin-bottom: 0;
+@media (min-width: 992px) {
+  #members .body img {
+    width: 160px;
+    height: 160px;
+  }
 }
-#place #cat-box {
+#members .vaycat {
   background-color: #000000;
   padding: 10px 0;
   color: #ffffff;
+}
+
+/*toppage section place*/
+#place {
+  font-size: 12px;
 }
 
 /*gmap area*/
@@ -404,13 +391,13 @@ a {
   width: 30%;
   font-weight: bold;
 }
-
 @media (min-width: 768px) {
   #mapbox {
     width: 300px;
     height: auto;
   }
 }
+
 #pagetop-btn {
   position: fixed;
   bottom: 40px;
@@ -428,7 +415,6 @@ a {
 #pagetop-btn a:hover {
   opacity: 1;
 }
-
 @media (min-width: 768px) {
   #pagetop-btn {
     position: fixed;
@@ -443,3 +429,5 @@ a {
     background-size: 80px 80px;
   }
 }
+
+/*# sourceMappingURL=theme.css.map */

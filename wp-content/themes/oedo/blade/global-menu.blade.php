@@ -30,8 +30,8 @@
 					'depth'             => 2,
 					'container'         => false,
 					'menu_class'        => 'nav navbar-nav navbar-right',
-					'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-					'walker'            => new wp_bootstrap_navwalker(),
+					'walker'            => new WPBootstrapNavwalker(),
+					'fallback_cb'       => [WPBootstrapNavwalker::class, 'fallback'],
 				]) }}
 			</div>
 		</div>

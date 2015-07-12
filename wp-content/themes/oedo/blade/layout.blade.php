@@ -7,25 +7,25 @@
 	<meta name="description" content="CODE for 大江戸の公式Webサイトです。">
 	<meta name="keyword" content="Code for Japan, Code for Oedo, Oedo, 大江戸">
 {{-- ページ共通のスタイルシートを指定します。 --}}
-	<link rel="stylesheet" href="{!! bloginfo('template_directory') !!}/assets/honoka/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{!! get_template_directory_uri() !!}/assets/honoka/css/bootstrap.min.css">
 {{--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">--}}
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="{!! bloginfo('template_directory') !!}/theme.css">
+	<link rel="stylesheet" href="{!! get_template_directory_uri() !!}/theme.css">
 @section('styles')
 {{-- ページ固有のスタイルシート指定のプレースホルダです。 --}}
 @show
 
 @action('wp_head')
 </head>
-<body>
 
-<body id="pagetop" class="single-page">
-{{-- ヘッダー --}}
-<div id="header-line">
-	<p id="header-text">Code for Oedo / コードフォー大江戸</p>
-	{{--<p id="header-social">socialicons area</p>--}}
-</div>
+<body id="pagetop">
 <div id="header">
+{{-- ヘッダー --}}
+	<div class="header-row">
+		<p class="header-text">Code for Oedo / コードフォー大江戸</p>
+		{{--<p class="header-social">socialicons area</p>--}}
+	</div>
+{{-- メニュー --}}
 @include('theme::global-menu')
 </div>
 
@@ -43,9 +43,9 @@
 
 {{-- ページ共通のスクリプトを指定します。 --}}
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="{!! bloginfo('template_directory') !!}/assets/honoka/js/bootstrap.min.js"></script>
+<script src="{!! get_template_directory_uri() !!}/assets/honoka/js/bootstrap.min.js"></script>
 {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>--}}
-<script src="{!! bloginfo('template_directory') !!}/js/common.js"></script>
+<script src="{!! get_template_directory_uri() !!}/js/common.js"></script>
 @section('scripts')
 {{-- ページ固有のスクリプト指定のプレースホルダです。 --}}
 @show

@@ -1,9 +1,5 @@
 <?php
 
-require_once __DIR__ . '/classes/wp_bootstrap_navwalker.php';
-
-
-
 add_action('init', function () {
 	register_nav_menus([
 		'global-menu' => 'グローバルメニュー',
@@ -35,7 +31,7 @@ add_action('init', function () {
 	]);
 
 	// 画像の設定をする
-	add_image_size('member_thumb', 320, 320, true);
+	add_image_size('member_thumbnail', 320, 320, true);
 });
 
 
