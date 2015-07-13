@@ -14,17 +14,22 @@
 @section('content')
 {{-- コンテンツを指定するブロックです。 --}}
 
-<ul class="breadcrumb">
-	<li><a href="/">Home</a></li>
-	<li class="active">404</li>
-</ul>
+<div class="container">
+	<div class="row">
+		<ul class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">404</li>
+		</ul>
+	</div>
 
-<header>
-	<h1>{{ trans('theme::messages.404.title') }}</h1>
-</header>
-<div id="single-main">
-	<div id="single-post">
-		<p>{{ trans('theme::messages.404.message') }}</p>
+	<header>
+		<h1>{{ trans('theme::messages.404.title') }}</h1>
+	</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<p>{{ trans('theme::messages.404.message') }}</p>
+		</div>
 	</div>
 </div>
 

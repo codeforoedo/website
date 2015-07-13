@@ -24,13 +24,14 @@
 <?php do_action('wp_head'); ?>
 </head>
 
-<body id="pagetop" class="single-page">
-<?php /* ヘッダー */ ?>
-<div id="header-line">
-	<p id="header-text">Code for Oedo / コードフォー大江戸</p>
-	<?php /*<p id="header-social">socialicons area</p>*/ ?>
-</div>
+<body id="pagetop">
 <div id="header">
+<?php /* ヘッダー */ ?>
+	<div class="header-row">
+		<p class="header-text">Code for Oedo / コードフォー大江戸</p>
+		<?php /*<p class="header-social">socialicons area</p>*/ ?>
+	</div>
+<?php /* メニュー */ ?>
 
 <div id="navbar">
 	<nav class="navbar navbar-default" role="navigation">
@@ -78,17 +79,22 @@
 
 <?php /* コンテンツを指定するブロックです。 */ ?>
 
-<ul class="breadcrumb">
-	<li><a href="/">Home</a></li>
-	<li class="active">404</li>
-</ul>
+<div class="container">
+	<div class="row">
+		<ul class="breadcrumb">
+			<li><a href="/">Home</a></li>
+			<li class="active">404</li>
+		</ul>
+	</div>
 
-<div class="headings-area">
-	<h1 id="sec01-headings" class="headings"><?php echo e(trans('theme::messages.404.title')); ?></h1>
-</div>
-<div id="single-main">
-	<div id="single-post">
-		<p><?php echo e(trans('theme::messages.404.message')); ?></p>
+	<header>
+		<h1><?php echo e(trans('theme::messages.404.title')); ?></h1>
+	</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<p><?php echo e(trans('theme::messages.404.message')); ?></p>
+		</div>
 	</div>
 </div>
 

@@ -194,10 +194,9 @@ a {
   padding: 0;
 }
 #recents .top-event-sec ul li {
+  margin-top: 22px;
   border-bottom: 1px dotted #ccc;
   font-size: 12px;
-  line-height: 3em;
-  height: 3em;
 }
 #recents .top-event-sec ul li a {
   display: block;
@@ -214,7 +213,7 @@ a {
   font-weight: bold;
 }
 #recents .top-event-sec ul li a dl dd {
-  display: inline-block;
+  display: inline;
 }
 
 @media (min-width: 768px) {
@@ -223,8 +222,6 @@ a {
   }
   #recents .top-event-sec ul li {
     font-size: 16px;
-    line-height: 4em;
-    height: 4em;
   }
   #recents .top-event-sec ul li a dl dt {
     display: inline-block;

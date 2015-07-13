@@ -192,10 +192,9 @@ a {
 			list-style: none;
 			padding: 0;
 			li {
+				margin-top: 22px;
 				border-bottom: 1px dotted #ccc;
 				font-size: 12px;
-				line-height: 3em;
-				height: 3em;
 				a {
 					display: block;
 					color: #333;
@@ -210,7 +209,7 @@ a {
 							color: $baseColor01;
 							font-weight: bold;
 						}
-						dd { display: inline-block; }
+						dd { display: inline; }
 					}
 				}
 			}
@@ -219,26 +218,24 @@ a {
 }
 @media (min-width: 768px) {
 	#recents {
-	  .top-event-sec {
-	  	ul {
-	  		margin-bottom: 40px;
-	  		li {
-	  			font-size: 16px;
-	  			line-height: 4em;
-	        height: 4em;
-	        a {
-	          dl {
-	    				dt {
-	    					display: inline-block;
-	    					margin-right: 1em;
-	    					color: $baseColor01;
-	    					font-weight: bold;
-	    				}
-	    			}
-	    		}
-	  		}
-	  	}
-	  }
+		.top-event-sec {
+			ul {
+				margin-bottom: 40px;
+				li {
+					font-size: 16px;
+				    a {
+				    	dl {
+							dt {
+								display: inline-block;
+								margin-right: 1em;
+								color: $baseColor01;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 

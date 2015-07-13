@@ -8,17 +8,23 @@
 //	'category_name' => 'event',
 	'posts_per_page' => 5,
 ])
+<?php $category = get_the_category()[0] ?>
 				<li><a href="{!! the_permalink(); !!}">
 					<dl>
 						<dt>{{ the_time(get_option('date_format')) }}</dt>
-						<dd>{{ the_title() }}</dd>
+						<dd>
+@if (get_field('event_date'))
+							<span class="label label-primary">{{ date('n月j日', strtotime(get_field('event_date'))) }}開催</span>
+@endif
+							{{ the_title() }}
+						</dd>
 					</dl>
 				</a></li>
 @postempty
 				<li>記事がありません。</li>
 @endpostloop
 			</ul>
-			<p class="more-btn"><a href="/all/">もっと見る &gt;</a></p>
+			<p class="more-btn"><a href="/all/">もっと読む &gt;</a></p>
 		</div>
 
 		{{-- カテゴリリスト --}}

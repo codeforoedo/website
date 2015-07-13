@@ -24,23 +24,25 @@
 </div>
 
 @postloop
+<?php $category = get_the_category()[0] ?>
+
 <div class="article row">
 	{{-- タイトル --}}
-	<h2><a href="{!! the_permalink() !!}" title="{{ the_title_attribute() }}">{{ the_title() }}</a></h2>
+	<h2><span class="label label-info">{{ $category->cat_name }}</span> <a href="{!! the_permalink() !!}" title="{{ the_title_attribute() }}">{{ the_title() }}</a></h2>
 	<p>
 
 	{{-- 日付 --}}
-	<span>日付：<a href="{!! the_permalink() !!}"><time datetime="{{ the_time('y-m-d') }}" />{{ the_time(get_option('date_format')) }}</a></span>
+	<span><a href="{!! the_permalink() !!}"><time datetime="{{ the_time('y-m-d') }}" />{{ the_time(get_option('date_format')) }}</a> 更新</span>
 	</p>
 
 	{{-- サムネイル画像 --}}
 	{{-- 
 	<a href="{!! the_permalink() !!}">
-	@if (has_post_thumbnail())
+	if (has_post_thumbnail())
 		{{ the_post_thumbnail('thumbnail') }}
-	@else
+	else
 		<img src="{{ bloginfo('template_url') }}/images/the_post_thumbnail_default.png" alt="デフォルト画像" />
-	@endif
+	endif
 	</a>
 	--}}
 
