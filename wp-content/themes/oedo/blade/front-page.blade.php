@@ -143,13 +143,4 @@
 
 
 
-{{--
-
-	ダイアログ
-
---}}
-@include('theme::front-page-contact')
-
-
-
 @endsection

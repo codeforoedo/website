@@ -32,6 +32,9 @@
 {{-- コンテント --}}
 @yield('content')
 
+{{-- ダイアログ --}}
+@include('theme::front-page-contact')
+
 {{-- フッター --}}
 <div id="footer">
 	<div id="inner-footer">
