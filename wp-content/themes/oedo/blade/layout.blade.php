@@ -9,7 +9,7 @@
 {{-- ページ共通のスタイルシートを指定します。 --}}
 	<link rel="stylesheet" href="{!! get_template_directory_uri() !!}/assets/honoka/css/bootstrap.min.css">
 {{--	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">--}}
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{!! get_template_directory_uri() !!}/theme.css">
 @section('styles')
 {{-- ページ固有のスタイルシート指定のプレースホルダです。 --}}
