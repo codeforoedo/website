@@ -120,6 +120,7 @@
 	活動拠点
 
 --}}
+{{--
 <section id="place" class="theme-section">
 	<header class="header">
 		<h2>- Place -</h2>
@@ -129,6 +130,7 @@
 @include('theme::front-page-place')
 	</div>
 </section>
+--}}
 
 
 
